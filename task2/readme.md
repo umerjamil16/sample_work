@@ -25,6 +25,8 @@ Modify `terraform.tfvars` with:
 vpc_id     = "vpc-xxxxxxxx"
 subnet_id  = "subnet-xxxxxxxx"
 ```
+## Note
+- Customize `allowed_cidr` in `terraform.tfvars` to allow access to bastion from your IP. 
 
 ## Deployment Steps
 ```bash
@@ -37,9 +39,6 @@ terraform apply
 ```bash
 ssh -i bastion_host_key.pem ec2-user@<public_ip>
 ```
-
-## Note
-- Customize `allowed_cidr` in variables
 
 ## Cleanup
 ```bash

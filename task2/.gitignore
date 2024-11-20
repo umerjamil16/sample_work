@@ -5,10 +5,6 @@
 # Crash log files
 crash.log
 
-# Ignore override files as they are usually local configurations
-*.tfvars
-*.tfvars.json
-
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
